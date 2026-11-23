@@ -6,10 +6,33 @@ Kumpulan soal dan bahan latihan Lomba Kompetensi Siswa (LKS) bidang Web Technolo
 
 Arsip dikelompokkan berdasarkan **tahun** (4 digit angka), lalu **jenjang** (`kabupaten`, `provinsi`, `nasional`, atau `wordskills`) dan **lokasi**. Aturan penamaan lengkap ada di [panduan kontribusi](CONTRIBUTION.md#struktur-folder).
 
-| Tahun | Jenjang | Lokasi |
-| --- | --- | --- |
-| 2023 | Kabupaten | [Kudus](2023/kabupaten/kudus/) |
-| 2023 | Provinsi | [Jawa Tengah](2023/provinsi/jawa-tengah/) |
+<!-- daftar-arsip:start -->
+<table>
+  <thead>
+    <tr>
+      <th>Tahun</th>
+      <th>Jenjang</th>
+      <th>Lokasi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" rowspan="2">2023</td>
+      <td>Kabupaten</td>
+      <td><a href="2023/kabupaten/kudus/">Kudus</a></td>
+    </tr>
+    <tr>
+      <td>Provinsi</td>
+      <td><a href="2023/provinsi/jawa-tengah/">Jawa Tengah</a></td>
+    </tr>
+    <tr>
+      <td align="center">2026</td>
+      <td>Kabupaten</td>
+      <td><a href="2026/kabupaten/kudus/">Kudus</a></td>
+    </tr>
+  </tbody>
+</table>
+<!-- daftar-arsip:end -->
 
 Nama dan isi berkas mengikuti arsip aslinya.
 
