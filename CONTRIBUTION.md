@@ -31,9 +31,31 @@ Contoh struktur saat ini:
 
 1. Pastikan kamu memiliki izin untuk membagikan materi yang akan ditambahkan.
 2. Buat atau pilih folder `<tahun>/<jenjang>/<lokasi>` yang sesuai.
-3. Masukkan berkas sumber (PDF atau ZIP) ke folder tersebut.
+3. Masukkan berkas sumber (PDF atau ZIP/RAR), masing-masing maksimal 25 MB, ke folder tersebut.
 4. Daftar arsip pada README diperbarui otomatis setiap hari, jadi tidak perlu mengeditnya manual. Jangan hapus penanda `<!-- daftar-arsip:start -->` dan `<!-- daftar-arsip:end -->`.
 5. Ajukan pull request dengan format pada bagian [Format commit dan pull request](#format-commit-dan-pull-request).
+
+## Batas ukuran berkas
+
+Setiap berkas yang di-commit maksimal **25 MB**. Berkas yang lebih besar harus dipecah menjadi beberapa bagian (misalnya arsip multi-volume ZIP/RAR) atau dikompres ulang sebelum diajukan.
+
+Periksa seluruh berkas yang sudah di-commit:
+
+```bash
+node scripts/check-file-size.mjs
+```
+
+Unit test pemeriksaannya:
+
+```bash
+node --test scripts/check-file-size.test.mjs
+```
+
+Aktifkan pemeriksaan otomatis sebelum push:
+
+```bash
+git config core.hooksPath .githooks
+```
 
 ## Format commit dan pull request
 
